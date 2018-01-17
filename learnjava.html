@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		learn java
+	</title>
+	
+</head>
+<body>
+<div id="div1" style="background: red;">
+	text1
+</div>
+<input type="button" onclick="change('red')" value="click me bitch">
+<script type="text/javascript">
+		// alert('i did not get selected in img');
+		// var a=confirm('hey people');
+		// if (a==true) {
+			// alert('ok pressed');
+		// }
+		// else
+		// alert('not pressed');
+		// var abc=prompt("enter name", "saumya");
+		// if(abc!=null)	{
+			// alert("your name is "+ abc);
+		document.write("hey");
+		// document.write(abc);
+		var text=document.getElementById("div1").innerHTML;
+		alert(text);
+		document.getElementById("div1").innerHTML="qwertyuiopasdfghjklzxcvbnm";
+		document.getElementById("div1").style.background ="grey";
+		document.getElementById("div1").style="color:green";
+		function change(a) {
+					document.body.style.backgroundColor=a;
+		}
+		// change("red");
+
+		var ele=document.getElementById("div1");
+		ele.style.color="blue";
+
+	</script>
+</body>
+</html>
