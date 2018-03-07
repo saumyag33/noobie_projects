@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		ass7
+	</title>
+</head>
+<body>
+<script type="text/javascript">
+	var name= prompt("enter name");
+	var one= prompt("enter first word");
+	var two= prompt("enter second word");
+	var three= prompt("enter third word");
+	var four= prompt("enter fourth word");
+	var five= prompt("enter fifth word");
+	document.write("my name is " + "<div>"+name+"</div>" +"<br>");
+	document.write("i study in "+"<div>"+one+"</div>"+"<br>");
+	document.write("i love "+"<div>"+two+"</div>"+"<br>");
+	document.write("i want to have "+"<div>"+three+"</div>"+"<br>");
+	document.write("i live in "+"<div>"+four+"</div>"+"<br>");
+	document.write("i eat "+"<div>"+five+"</div>"+"<br>");
+	var color1= prompt("enter color");
+	var abc=document.getElementsByTagName('div');
+	
+	for(var i=0;i<=abc.length ;i++){
+	abc[i].style="color:"+color1+";display:inline";};
+
+</script>
+</body>
+</html>

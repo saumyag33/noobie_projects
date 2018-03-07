@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		ass8
+	</title>
+</head>
+<body>
+<img  id="one" src="1.jpeg">
+<img  id="two" src="2.jpeg">
+<img id="three" src="3.png">
+<img id="four" src="4.jpeg">
+<script type="text/javascript">
+	// document.getElementById("one").setAttribute("onmouseover","src='images.png'");
+	// document.getElementById("one").setAttribute("onmouseout","src='1.jpeg'");
+	// document.getElementById("two").setAttribute("onmouseover","src='index.png'");
+	// document.getElementById("two").setAttribute("onmouseout","src='2.jpeg'");
+	// document.getElementById("three").setAttribute("onmouseover","src='images.jpeg'");
+	// document.getElementById("three").setAttribute("onmouseout","src='3.png'");
+	document.getElementById("four").setAttribute("onmouseover","document.getElementById('one').src='index.png';document.getElementById('two').src='images.png';document.getElementById('three').src='images.jpeg'");
+	document.getElementById("four").setAttribute("onmouseout","document.getElementById('one').src='1.jpeg';document.getElementById('two').src='2.jpeg';document.getElementById('three').src='3.png'");
+	// document.getElementById("four").setAttribute("onmouseover","document.getElementById('two').src='images.png'");
+	// document.getElementById("four").setAttribute("onmouseout","document.getElementById('two').src='2.jpeg'");
+	// document.getElementById("four").setAttribute("onmouseover","document.getElementById('three').src='images.jpeg'");
+	// document.getElementById("four").setAttribute("onmouseout","document.getElementById('three').src='3.png'");
+	
+</script>
+</body>
+</html>
