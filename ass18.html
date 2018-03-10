@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ass1</title>
+</head>
+<body>
+<img src="images.jpeg" onclick="abc()">
+<button onclick="pqr()">close</button>
+<script type="text/javascript">
+	function abc() {
+		// body...
+		a=window.open('https://www.google.co.in/',"height=100,width=100,left=0,top=0");
+		a=window.open('https://www.google.co.in/',"height=100,width=100,left=0,top=100");
+		a=window.open('https://www.google.co.in/',"height=100,width=100,right=0,top=0");
+		a=window.open('https://www.google.co.in/',"height=100,width=100,right=0,top=100");
+		a=window.open('https://www.google.co.in/',"height=100,width=100,left=50,top=50");
+	}
+	function pqr() {
+		// body...
+		a.close();
+	}
+</script>
+</body>
+</html>

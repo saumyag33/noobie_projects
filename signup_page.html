@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		signup
+	</title>
+	<style type="text/css">
+	body{
+		background-color: #335D7E;
+	}
+		form{
+			font-size: 30px;
+			padding: 30px 5px;
+			margin: 70px 300px;
+			background-color: #F27280;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			/*justify-content: center;*/
+			align-items: center;
+			/*margin-top: 100px;*/
+		}
+		input{
+			font-size: 20px;
+			height: auto;
+			border: none;
+			background-color: rgba(0,0,0,0);
+			/*opacity: 0;*/
+			border-bottom: 1px solid black;
+			
+		}
+	</style>
+</head>
+<body>
+<form>
+<fieldset>
+<legend style="font-size: 30px; ">personal information:</legend>
+educational qualifications: <select name="educational qualifications" >
+	<option value="class10">class 10</option>
+	<option value="class12">class 12</option>
+	<option value="undergrad">undergrad</option>
+	<option value="postgrad">postgrad</option>
+
+</select><br>
+	phone number: <input id="pn" type="text" name="phone number"><br>
+	age: <input id="age" type="text" name="age"><br>
+	gender: <input type="radio" name="male" value="male">male
+	<input type="radio" name="male" value="female">female
+	<br>
+	password: <input id="password" type="password" name="password"><br>
+	confirm password: <input id="cpassword" type="password" name="confirm password"><br>
+	name: <input id="name" type="text" name="name"><br>
+	city: <input id="city" type="text" name="city"><br>
+	</fieldset>
+	<input type="button" name="submit" value="submit" onclick="valid()">
+</form>
+<script type="text/javascript">
+	function valid() {
+		// body...
+		// alert('hi');
+		var phone1= document.getElementById('pn');
+		var age1= document.getElementById('age');
+		var pass1= document.getElementById('password');
+		var pass2 =document.getElementById('cpassword');
+		var name1= document.getElementById('name');
+		var city1= document.getElementById('city');
+		var phonecheck= /^[789][0-9]{9}$/;
+		if (!phonecheck.test(phone1.value)){
+			alert('edit phone');
+		}
+		if(!(parseInt(age1.value)<100&&parseInt(age1.value)>0)){
+		// if(!agecheck.test(age1.value))
+			alert('edit age');
+		}
+		var passcheck=/^[a-zA-Z]\w{7,}$/;
+		if(!(pass1.value == pass2.value && passcheck.test(pass1.value))){
+			alert('edit password');
+		}
+		var namecheck=/^[a-zA-Z]{3,}(\s[a-zA-Z]+){0,2}$/;
+		if(!namecheck.test(name1.value)){
+			alert('edit name');
+		}
+		var citycheck=/^[a-zA-Z]{3,}(\s[a-zA-Z]+){0,2}$/;
+		if(!citycheck.test(city1.value)){
+			alert('edit city');
+		}
+			
+			
+			
+			
+			
+
+	}
+</script>
+</body>

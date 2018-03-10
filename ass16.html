@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		ass16
+	</title>
+	<style>
+		#i1:hover{
+			background-color: red;
+			opacity: 0.5;
+			display: inline-block;
+
+		}
+	</style>
+</head>
+<body>
+ <table>
+
+
+<tbody><tr valign="top" align="center"><td>
+<img class="ball" onmouseout="alr()" onmouseover="clearTimeout(t)"; id="i1" src="marble1.jpg">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img class="ball" onmouseout="alr()" onmouseover="clearTimeout(t)"; id="i2" src="marble1.jpg">
+</td></tr>
+
+<tr valign="top" align="center"><td>
+&nbsp;<br><br>
+</td></tr>
+
+
+<tr valign="top" align="center"><td>
+<img class="ball" onmouseout="alr()" onmouseover="clearTimeout(t)"; id="i6" src="marble1.jpg">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img class="ball" onmouseout="alr()" onmouseover="clearTimeout(t)"; id="cent" src="marble1.jpg">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img class="ball" onmouseout="alr()" onmouseover="clearTimeout(t)"; id="i3" src="marble1.jpg">
+</td></tr>
+
+<tr valign="top" align="center"><td>
+&nbsp;<br><br>
+</td></tr>
+
+
+
+<tr valign="top" align="center"><td>
+<img class="ball" onmouseout="alr()" onmouseover="clearTimeout(t)"; id="i5" src="marble1.jpg">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img class="ball" onmouseout="alr()" onmouseover="clearTimeout(t)"; id="i4" src="marble1.jpg">
+</td></tr>
+
+
+</tbody></table>
+ <script type="text/javascript">
+ var i=1;
+ function alr(){
+ 	document.getElementById('i'+i).src='marble1.jpg';
+ 	i++;
+ 	if(i==7)
+ 		i=1;
+ 	
+ 	document.getElementById('i'+i).src='bal.jpg';
+  t =window.setTimeout(alr, 1000);
+ };
+window.setTimeout(alr, 1000);
+ </script>
+</body>
+</html>

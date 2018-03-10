@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ass19</title>
+</head>
+<body>
+
+<p>hey there! i am using whatsapp</p>
+<img src="images.jpeg">
+<script type="text/javascript">
+var x = document.cookie;
+// alert(x)
+var check = 0;
+var cook = x.split(";");
+for(var i = 0 ; i<= cook.length ; i++){
+	var ne = cook[i];
+	var ke = String(ne).split("=");
+	if(ke[0].trim() == "counter"){
+		check =1;
+		var vl = parseInt(ke[1]);
+		vl += 1;
+		document.cookie = "counter=" + vl;
+		document.write(vl);
+	}
+}
+if(check == 0){
+	document.cookie = "counter= 1";
+}
+// if(x==1)
+// document.innerHTML="you have visited first time"
+// else
+// document.innerHTML="you have visited"+x "no of times";
+// document.innerHTML="you last visited on"+ date()	
+</script>
+</body>
+</html>
